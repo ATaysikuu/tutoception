@@ -15,7 +15,9 @@
 
 body {
     font-family: 'roboto_light';
-    background: linear-gradient(red,orange,yellow,green,blue,purple) no-repeat;
+    height: 100%;
+    background-color:#BDBDBD;
+   /* background: linear-gradient(red,orange,yellow,green,blue,purple) no-repeat;*/
 }
 
 a {
@@ -23,20 +25,130 @@ a {
     color: black;
     text-decoration: none;
 }
-
+/*================*/
+/*===== MENU =====*/
+/*================*/
 nav {
-    width: 102%;
-    margin-left: -1%;
-    margin-right: -1%;
-    background-color: chocolate
+    position:absolute;
+    width:100%;
+    top:0;
+    border:1px solid black;
 }
-
-nav li {
+nav ul {
+    margin-top:0;
+    width:66%;
+    padding:0;
+    box-shadow: 0px 0px 5px 2px #BDBDBD;
+    border: 1px solid blue;
+}
+nav li{
+    position:relative;
     list-style: none;
-    display: inline;
+    display:inline-block;
+    width:30%;
+    height:100%;
+    line-height: 5em;
+    text-align: center;
+    background-color: #FFD180;
+    border: 1px solid green;
+}
+nav li:hover {
+    background-color: #FF9100;
+}
+nav li a {
+    text-transform: uppercase;
+    position:relative;
+    z-index:2;
+    -webkit-transition: all 100ms linear;
+    -moz-transition: all 100ms linear;
+    -o-transition: all 100ms linear;
+    -ms-transition: all 100ms linear;
+    transition: all 100ms linear;
+}
+/*===================*/
+/*===== CONTENU =====*/
+/*===================*/
+.content {
+    width: 90%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    left:0;
+    right:0;
+    top: 0;
+    bottom:0;
+    position: absolute;
+    padding-top: 1%;
+    padding-bottom: 5%;
+    background-color: #EEE;
+    box-shadow: 0px 0px 5px 2px #9E9E9E;
+}
+.content_tuto {
+    width: 90%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    left:0;
+    right:0;
+    top: 0;
+    bottom:0;
+    position: absolute;
+    padding-top: 1%;
+    padding-bottom: 5%;
+    background-color: #FFF;
+    box-shadow: 0px 0px 5px 2px #9E9E9E;
+}
+.page {
+    margin-top: 200px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.content {
+#entete {
+    background-color: #FFF;
     width: 85%;
     margin: auto;
+    text-align: center;
+    box-shadow: 0px 0px 5px 2px #BDBDBD;
+}
+
+#home_buttons {
+    width: 85%;
+    margin: auto;
+    margin-top: 5%;
+}
+
+#button_html {
+    width:200px;
+    height: 50px;
+    background-color: #FFF ;
+    box-shadow: 0px 0px 5px 2px #BDBDBD;
+    float: left;
+    margin-left: 15%;
+    text-align: center;
+    border: none;
+}
+#button_html:hover {
+    background-color: #BDBDBD;
+}
+#button_html:active {
+    background-color: #757575
+}
+
+#button_css {
+    width: 200px;
+    height: 50px;
+    background-color: #FFF;
+    box-shadow: 0px 0px 5px 2px #BDBDBD;
+    float: right;
+    margin-right: 15%;
+    text-align: center;
+    border: none;
+}
+#button_css:hover {
+    background-color: #DDD;
+}
+#button_css:active {
+    background-color: #757575;
 }
