@@ -12,6 +12,17 @@
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: 'roboto_bold';
+    src: url('../fonts/Roboto-Light.eot');
+    src: url('../fonts/Roboto-Light.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Roboto-Light.woff') format('woff'),
+         url('../fonts/Roboto-Light.ttf') format('truetype'),
+         url('../fonts/Roboto-Light.svg#latina_essentialbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
 
 body {
     font-family: 'roboto_light';
@@ -32,25 +43,28 @@ nav {
     position:absolute;
     width:100%;
     top:0;
-    border:1px solid black;
+    /*border:1px solid;*/
 }
 nav ul {
     margin-top:0;
-    width:66%;
+    width:fit-content;
+    min-width: 60%;
     padding:0;
-    box-shadow: 0px 0px 5px 2px #BDBDBD;
-    border: 1px solid blue;
+    /*box-shadow: 0px 0px 5px 2px #BDBDBD;*/
+    /*border:1px solid red;*/
 }
 nav li{
     position:relative;
     list-style: none;
     display:inline-block;
-    width:30%;
+    width:32%;
     height:100%;
+    float:left;
     line-height: 5em;
     text-align: center;
     background-color: #FFD180;
-    border: 1px solid green;
+    box-shadow: 0px 5px 2px #BDBDBD, 0px 0px 0px transparent, 0px 0px 0px transparent, 0px 0px 0px transparent;
+    /*border:1px solid green;*/
 }
 nav li:hover {
     background-color: #FF9100;
@@ -70,22 +84,21 @@ nav li a {
 /*===================*/
 .content {
     width: 90%;
-    height: 100%;
+    height: auto;
     margin-left: auto;
     margin-right: auto;
     left:0;
     right:0;
-    top: 0;
-    bottom:0;
     position: absolute;
     padding-top: 1%;
     padding-bottom: 5%;
     background-color: #EEE;
     box-shadow: 0px 0px 5px 2px #9E9E9E;
+    border-radius: 3px;
 }
 .content_tuto {
     width: 90%;
-    height: auto;
+    height: fit-content;
     margin-left: auto;
     margin-right: auto;
     left:0;
@@ -111,6 +124,7 @@ nav li a {
     margin: auto;
     text-align: center;
     box-shadow: 0px 0px 5px 2px #BDBDBD;
+    border-radius: 3px;
 }
 
 #home_buttons {
@@ -128,6 +142,7 @@ nav li a {
     margin-left: 15%;
     text-align: center;
     border: none;
+    border-radius: 3px;
 }
 #button_html:hover {
     background-color: #BDBDBD;
@@ -145,6 +160,7 @@ nav li a {
     margin-right: 15%;
     text-align: center;
     border: none;
+    border-radius: 3px;
 }
 #button_css:hover {
     background-color: #DDD;

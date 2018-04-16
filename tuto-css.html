@@ -1,13 +1,59 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <!-- titre, reglages pour google, description et tout ce joyeux bazar -->
+   <link rel="stylesheet" type="text/css" href="css/style.css"/>
+   <meta charset="UTF-8">
+   <title>TutoCeption - CSS</title>
 </head>
-    <header>
-        <!-- titre, menu et tout -->
-    </header>
     <body>
-        <!-- contenu, tuto css -->        
+        <!-- contenu, tuto html -->
+        <div class="content_tuto">
+            <nav>
+                <ul>
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="tuto-html.html">html</a></li>
+                    <li><a href="tuto-css.html">css</a></li>
+                </ul>
+            </nav>
+            <div class="page">
+        <p>Le CSS (Cascading Style Sheets) est aussi un langage de présentation qui vient compléter le HTML. C'est elle qui s'occupe de la forme de la page web.<br/><br/> Sa syntaxe est relativement simple. On indique en premier le selector(ID,class, balise), c'est à dire la partie de l'HTML que l'on veut modifier, suivi de ses propriétés. Comme le montre l'exemple:</p> 
+            <img src="images/css1.png"></img>
+        <p>Ici, le Selector est h1 (le titre) et ce dernier sera écrit en bleu</p>
+        <p> Afin d'aller plus vite, on peut regrouper les selectors entre eux surtout si on veut leur appliquer le même style.<br/> En CSS, il est aussi recommander d'utiliser les commentaires /* Commentaire */ </p>
+        <h1>Comment relier le CSS au HTML?</h1>
+            <p>Il existe 3 méthodes pour relier le code CSS à celui du HTML:
+                <ul>
+                    <li><strong>Style externe</strong>: créer un autre fichier .css et écrire < link rel="stylesheet" type="text/css" href="nomDuFichier" / > dans la balise < head > du fichier HTML.</li>
+                    <li><strong>Style interne</strong>: vous pouvez écrire directement votre code CSS dans l'entête HTML. </li>
+                    <li><strong>Style dans les balises</strong>: il est possible d'appliquer du CSS directement dans les balises avec l'attribut style</li>
+                </ul></p>
+        <h1> Les couleurs </h1>
+            <p>Pour indiquer une couleur vous pouvez indiquer le nom (red,green,blue..) en RGB(valeur Rouge, valeur Verte, valeur Bleue) ou en héxadécimale (#FF7F50 pour Coral)</p>
+        <h1>Les propriétés</h1>
+            <p>Vous connaissez déjà une propriété.. Si, si je vous jure! C'est la propriété <strong>color.</strong></p>Elle permet d'affecter une couleur.<br/> Pour la couleur de fond c'est la propriété <strong>background-color</strong>
+            <h3>Les bordures</h3>
+                <p>Pour encadrer du contenu de manière plus esthétique, on utilise <strong>border: épaisseur en pixel type de bordure(pointillet, tiret..) et la couleur</strong></p>
+
+            <h3>Les Marges</h3>
+                <p><strong>margin-top/bottom/right/left</strong></p>
+
+            <h3>Texte</h3>
+                <p></p>
+
+            <h3>Les fonts</h3>
+                <p></p>
+
+            <h3>Les tableaux</h3>
+                <p></p>
+
+            <h3>Le modèle de boîte CSS</h3>
+                <p></p>
+
+            <h3>Les DIV</h3>
+                <p></p>
+
+            <h3>La propriété float</h3>
+                <p></p>
     </body>
     <footer>
         <!-- copyright et autre -->
