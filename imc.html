@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>IMC</title>
+    <meta charset="utf-8">
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+    <script type="text/javascript">
+    	function calculate(){
+	    	var height = document.getElementById('height').value;
+	    	var weight = document.getElementById('weight').value;
+	    	var imc = (weight/(height*height));
+	    	//document.getElementById('imc').value=imc;
+	    	if (imc>25){
+	    		alert('trop lourd, IMC: '+imc);
+	    	}
+	    	else if (imc<20){
+	    		alert('trop leger, IMC: '+imc);
+	    	}
+	    	else{
+	    		alert('bon, IMC: '+imc);
+	    	}
+    		//alert(weight/(height*height));
+    	}
+    </script>
+</head>
+<body>
+	<div class="content_tuto">
+		<form>
+			<input type="text" placeholder="height" id="height">
+			<input type="text" placeholder="weight" id="weight">
+			<input type="submit" value="calculate" onclick="calculate()">
+		</form>
+	</div>
+</body>
+</html>

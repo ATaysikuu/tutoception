@@ -10,15 +10,17 @@
     </header> 
     <body> 
         <!-- contenu, tuto html --> 
-        <div class="content"> 
+        <div class="content_tuto"> 
             <nav>
                 <ul>
                     <li><a href="index.html">home</a></li>
                     <li><a href="tuto-html.html">html</a></li>
                     <li><a href="tuto-css.html">css</a></li>
+                    <li><a href="tuto.html">tuto</a></li>
                 </ul>
             </nav>
             <div class="page">
+                <a href="#balises">test</a>
             <p> 
                 Contrairement à ce que beaucoup de monde pense, le HTML n’est pas un langage de programmation, mais de description. On ne programme pas en HTML, on décrit le contenu d’une page aux navigateurs qui la visitent, ces navigateurs se chargent ensuite de l’afficher. <br /> 
                 Le HTML (pour HyperText Markup Language) est basé sur un système de balises et d'attributs. Si l’on veut afficher par exemple un paragraphe, on va venir créer une balise de début de paragraphe (on dit qu’on ouvre la balise), on tape le contenu du paragraphe, puis on termine en plaçant une balise de fin de paragraphe (on dit qu’on ferme la balise). <br /> 
@@ -27,55 +29,76 @@
                 Il existe un très grand nombre de balises. Nous ne les verrons pas toutes, mais la « bible » du html les regroupe toutes avec des exemples d’usage ici => <a href="https://www.w3schools.com/html/">w3schools</a>.<br/>
                 Le tutoriel suivant va vous apprendre comment recréer la page que vous avez sous les yeux. TutoCeption. 
             </p> 
-            <h1> Les Balises </h1>
-                <p> Tout d'abord, pour ce qui est de l'éditeur de texte vous avez le choix! Ici, nous utiliserons SublimeText.(why not)<br/> Il est primordial de commencer chaque programme en HTML par le <strong>< ! DOCTYPE html ></strong> car c'est elle qui permet l'affichage d'une page web en précisant le type de document et la version html utilisée (ici HTML5). <br/> Ensuite, il faut ouvrir une balise html et c'est ici que se trouvera majoritairement votre code pour le site. </p> <br/> Vient l'entête avec la balise <strong>< head ></strong> et le corps <strong>< body ></strong>.
+            <a name="balises"><h1> Les Balises </h1></a>
+                <p> Tout d'abord, pour ce qui est de l'éditeur de texte vous avez le choix! Ici, nous utiliserons SublimeText.(why not)<br/> Il est primordial de commencer chaque programme en HTML par le <strong>&lt;!DOCTYPE html&gt;</strong> car c'est elle qui permet l'affichage d'une page web en précisant le type de document et la version html utilisée (ici HTML5). <br/> 
+                Ensuite, il faut ouvrir une balise html et c'est ici que se trouvera majoritairement votre code pour le site. </p> <br/> Vient l'entête avec la balise <strong>&lt;head&gt;</strong> et le corps <strong>&lt;body&gt;</strong>.
                 <ul>
                     <li><strong>Head</strong>: cette partie ne s'affichera pas sur la page, en revanche, elle indique le titre du site et son encodage. Lorsqu'on voudra lier un fichier .css avec un .html c'est dans le head qu'on se placera.  </li>
                     <li><strong>Body</strong>: tout ce qui se trouvera dans cette balise sera afficher sur la page web! </li>
                 </ul>
                 <h2>Les attributs</h2>
                     <p>Les attributs viennent compléter les informations d'une balise </p>
-                <h2>La balise < div ></h2>
-                    <p>La balise < div > (division du document) permet d'organiser le contenu du code sans représenter quelque chose en particulier. Elle est généralement utilisée pour grouper des élements entre eux et leur appliquer un style avec les attributs <strong>class</strong> ou <strong>id</strong>. </p>
+                <h2>La balise &lt;div&gt;</h2>
+                    <p>La balise &lt;div&gt; (division du document) permet d'organiser le contenu du code sans représenter quelque chose en particulier. Elle est généralement utilisée pour grouper des élements entre eux et leur appliquer un style avec les attributs <strong>class</strong> ou <strong>id</strong>. </p>
 
-                <p>N'oubliez pas de fermer vos balises! Avec <strong>< /Balise ></strong> pour les balises en paires mais inutile pour les balises orphelines comme <strong>< br/ ></strong></p>
+                <p>N'oubliez pas de fermer vos balises! Avec <strong>&lt;/Balise&gt;</strong> pour les balises en paires mais inutile pour les balises orphelines comme <strong>&lt;br /&gt;</strong></p>
                 <div class="image">
-                    <p><img src="images/html1.png"></img></p> <!-- Screenshot de SublimeText -->
+                <img src="images/html1.png"/>
+                <img src="images/Titre1.png"/> <!-- Screenshot de SublimeText -->
                     <h2>Voici ce que ça donne sur SublimeText</h2>
                 </div>
 
             <h1>Titres et paragraphes</h1>
-                <p>Nous allons ,à présent, parler des titres et paragraphes.<br/> Les titres sont répartis en 6 niveaux, 1 étant la plus importante et 6 la moins importante donc nous avons <strong>h1,h2,h3,h4,h5 et h6</strong>. Rien de bien difficile <br/> Pour les paragraphes c'est la balise <strong>< p ></strong></p>
+                <p>Nous allons ,à présent, parler des titres et paragraphes.<br/> Les titres sont répartis en 6 niveaux, 1 étant la plus importante et 6 la moins importante donc nous avons <strong>h1, h2, h3, h4, h5 et h6</strong>. Rien de bien difficile <br /> Pour les paragraphes c'est la balise <strong>&lt;p&gt;</strong></p>
+                <div class="image">
+                    <img src="images/Para2.png"/>
+                    <img src="images/Parabis.png"/>
+                </div>
 
             <h1>Les commentaires</h1>
-                <p>En programmation, il est toujours utile d'écrire des commentaires pour les personnes qui liront après nous. Evidemment, le commentaire ne sera pas afficher sur la page web : <strong>< ! -- Commentaire - - ></strong></p>
+                <p>En programmation, il est toujours utile d'écrire des commentaires pour les personnes qui liront après nous. Evidemment, le commentaire ne sera pas afficher sur la page web : <strong>&lt;!-- Commentaire --&gt;</strong></p>
+                <div class="image">
+                    <img src="images/Comm.png"/>
+                </div>
 
 
             <h1> Les liens</h1>
                 <p> En HTML, il est important de savoir faire des liens sur une page, c'est-à-dire insérer une image, un lien d'un site internet ou bien marquer un endroit précis de la page pour s'y rendre plus facilement. <br/> Pour cela on va utiliser les balises suivantes: </p>
             
                 <ul>
-                    <li>Faire un lien vers un site internet: <strong>< a href="lien du site"></ a ></strong></li>
-                    <li>Faire un lien vers une adresse de messagerie: <strong>< a href="mailto:adresse">< /a ></strong></li>
-                    <li>Insérer une image: <strong>< img src="source de l'image">< /img ></strong></li>
-                    <li>Hypertexte vers un endroit de la page: <strong>< a href="#mots" accesskey="p" title="nomDuParagraphe" < /a ></strong></li>
-                    <li>Insérer un fichier vidéo: <strong>< object type="application" data="flvplayer.swf" width="taille" height="taille"></strong></li>
+                    <li>Faire un lien vers un site internet: <strong>&lt;a href="lien du site"&gt;&lt;/a&gt;</strong></li>
+                    <li>Faire un lien permettant d'envoyer un email : <strong>&lt;a href="mailto:adresse"&gt;&lt;/a&gt;</strong></li>
+                    <li>Insérer une image : <strong>&lt;img src="source de l'image"&gt;&lt;/img&gt;</strong></li>
+                    <li>Hypertexte vers un endroit de la page : <strong>&lt;a href="#mots" accesskey="p" title="nomDuParagraphe"&lt;/a&gt;</strong></li>
+                    <li>Insérer un fichier vidéo (première méthode) : <strong>&lt;object type="application" data="flvplayer.swf" width="taille" height="taille"&gt;</strong></li>
+                    <li>Insérer un fichier vidéo (deuxième méthode) : <strong>&lt;video id="id de la vidéo" width="largeur" height ="hauteur"&gt;&lt;source src="source" type="video/mp4"&gt;&lt;/video&gt;</strong></li>
                 </ul>
-                <img src="images/Aki.jpg" width="150"></img>
-        
+                <div class="image">
+                    <img src="images/Lien1.png"/>
+                    <img src="images/Lien2.png"/>                    
+                </div>
+                
             <h1>Les listes</h1>
-                <p>Il est possible de lister des mots, de façon ordonnée ou désordonnée.<br/> Avec la balise <strong>< table ></strong> qui crée un tableau et la balise <strong>< ul ></strong> pour faire une liste désordonnée et <strong>< ol ></strong> pour l'ordonner. On écrit ensuite les mots de la liste entre les balises <strong>< li ></strong></p>
+                <p>Il est possible de lister des mots, de façon ordonnée ou non.<br/> Avec la balise <strong>&lt;ul&gt;</strong> qui crée une liste non-ordonnée, ou <strong>&lt;ol&gt;</strong> pour l'ordonner. Puis la balise <strong>&lt;li&gt;</strong> pour créer un élément de liste.</p>
 
             <h1>Les tableaux</h1>
-            <p> Pour créer des tableaux, utilisez la balise <strong>< table border="1" cellspacing="1" ></strong> dans laquelle vous utiliserez la balise <strong>< tr ></strong> qui désigne une ligne du tableau. Et pour afficher un message vous devrez utiliser les balises <strong>< th ></strong> ou <strong>< td ></strong></p>
+            <p> Pour créer des tableaux, utilisez la balise <strong>&lt;table&gt;</strong> dans laquelle vous utiliserez la balise <strong>&lt;tr&gt;</strong> qui désigne une ligne du tableau. Et pour afficher un message vous devrez utiliser les balises <strong>&lt;th&gt;</strong> ou <strong>&lt;td&gt;</strong></p>
             
             <h1>Les formulaires</h1>
-                <p>Pour créer des formulaires ce sera la balise <strong>< form >.</strong>A l'intérieur de cette balise, on y place <strong>< input type=" name=></strong> afin de déterminer les élements du formulaire.<br/>La balise <strong>< input ></strong> est suivie de 3 types d'attributs:
+                <p>Pour créer des formulaires ce sera la balise <strong>&lt;form&gt;.</strong>A l'intérieur de cette balise, on y place <strong>&lt;input type="" name=""&gt;</strong> afin de déterminer les élements du formulaire.<br/>La balise <strong>&lt;input&gt;</strong> est suivie de 3 types d'attributs:</p>
                     <ul>
                         <li><strong>text</strong>: qui permet d'entrer une ligne de texte(nom,prénom..)</li>
                         <li><strong>radio</strong>: qui permet à l'internaute de choisir un choix parmis d'autres. </li>
                         <li><strong>submit</strong>: qui permet de soumettre ce que la personne aura rempli dans les champs précédents. </li>
-                    </ul></p>
+                    </ul>  
+                <div class="image">
+                    <img src="images/Form.png"/>
+                    <img src="images/Form1.png"/>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="js/rainbow-custom.min.js"></script>
     </body> 
     <footer> 
+    </footer>
 </html>
