@@ -1,0 +1,208 @@
+/*=================*/
+/*===== FONTS =====*/
+/*=================*/
+
+@font-face {
+    font-family: 'roboto_light';
+    src: url('../fonts/Roboto-Light.eot');
+    src: url('../fonts/Roboto-Light.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Roboto-Light.woff') format('woff'),
+         url('../fonts/Roboto-Light.ttf') format('truetype'),
+         url('../fonts/Roboto-Light.svg#latina_essentialbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'roboto_bold';
+    src: url('../fonts/Roboto-Bold.eot');
+    src: url('../fonts/Roboto-Bold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Roboto-Bold.woff') format('woff'),
+         url('../fonts/Roboto-Bold.ttf') format('truetype'),
+         url('../fonts/Roboto-Bold.svg#latina_essentialbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body {
+    font-family: 'roboto_light';
+    height: 100%;
+    background-color:#BDBDBD;
+   /* background: linear-gradient(red,orange,yellow,green,blue,purple) no-repeat;*/
+}
+
+strong {
+    font-family: 'roboto_bold';
+}
+
+a {
+    font-family:'roboto_bold';
+    font-weight: 900;
+    color: black;
+    text-decoration: none;
+}
+/*================*/
+/*===== MENU =====*/
+/*================*/
+nav {
+    position:fixed;
+    width:60%;
+    top:1%;
+}
+nav ul {
+    margin-top:0;
+    width:fit-content;
+    min-width: 100%;
+    padding:0;
+}
+nav li{
+    position:relative;
+    list-style: none;
+    display:inline-block;
+    width:24%;
+    height:100%;
+    float:left;
+    line-height: 5em;
+    text-align: center;
+    background-color: #FFD180;
+    box-shadow: 0px 5px 2px #BDBDBD, 0px 0px 0px transparent, 0px 0px 0px transparent, 0px 0px 0px transparent;
+    /*box-shadow: 0px 0px 5px 2px #BDBDBD;*/
+}
+nav li:hover {
+    background-color: #FF9100;
+}
+nav li:hover > ul {
+    display:block;
+    visibility: visible;
+}
+nav ul li ul {
+    position: relative;
+    display: none;
+    visibility: none;
+    width: 100%;
+}
+nav li ul li {
+    list-style: none;
+    width:100%;
+}
+nav li ul li a {
+    font-family: 'roboto_light';
+    text-transform: none;
+}
+nav li a {
+    text-transform: uppercase;
+    position:relative;
+    z-index:2;
+    -webkit-transition: all 100ms linear;
+    -moz-transition: all 100ms linear;
+    -o-transition: all 100ms linear;
+    -ms-transition: all 100ms linear;
+    transition: all 100ms linear;
+}
+footer {
+    height: 1%;
+}
+/*===================*/
+/*===== CONTENU =====*/
+/*===================*/
+.content {
+    width: 70%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    left:0;
+    right:0;
+    position: absolute;
+    padding-top: 1%;
+    padding-bottom: 5%;
+    background-color: #EEE;
+    box-shadow: 0px 0px 5px 2px #9E9E9E;
+    border-radius: 3px;
+}
+.content_tuto {
+    width: 70%;
+   /* height: fit-content;*/
+    display: block;
+    overflow: auto;
+    margin-left: auto;
+    margin-right: auto;
+    left:0;
+    right:0;
+    top: 1%;
+    bottom:1%;
+    position: absolute;
+    padding-top: 1%;
+    padding-bottom: 5%;
+    background-color: #FFF;
+    box-shadow: 0px 0px 5px 2px #9E9E9E;
+    border: 1px solid #9E9E9E;
+}
+.page {
+    margin-top: 13%;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+}
+#entete {
+    background-color: #FFF;
+    width: 85%;
+    margin: auto;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    text-align: center;
+    box-shadow: 2px 2px 5px 2px #BDBDBD;
+    border-radius: 3px;
+}
+#home_buttons {
+    width: 85%;
+    margin: auto;
+    margin-top: 5%;
+}
+#button_html {
+    width:200px;
+    height: 50px;
+    background-color: #FFF ;
+    box-shadow: 2px 2px 5px 2px #BDBDBD;
+    float: left;
+    margin-left: 15%;
+    text-align: center;
+    border: none;
+    border-radius: 3px;
+}
+#button_html:hover {
+    background-color: #BDBDBD;
+}
+#button_html:active {
+    background-color: #757575
+}
+#button_css {
+    width: 200px;
+    height: 50px;
+    background-color: #FFF;
+    box-shadow: 2px 2px 5px 2px #BDBDBD;
+    float: right;
+    margin-right: 15%;
+    text-align: center;
+    border: none;
+    border-radius: 3px;
+}
+#button_css:hover {
+    background-color: #DDD;
+}
+#button_css:active {
+    background-color: #757575;
+}
+.image {
+    max-width: 60%;
+    margin: auto;
+    box-shadow:2px 2px 5px 2px #BDBDBD;
+}
+.image h2 {
+    text-align: center;
+    padding-top: -1%;
+}
+.image img {
+    width: 100%;
+    margin: auto;
+}
