@@ -87,6 +87,7 @@ nav li ul li {
 }
 nav li ul li a {
     font-family: 'roboto_light';
+    text-transform: none;
 }
 nav li a {
     text-transform: uppercase;
