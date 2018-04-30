@@ -14,13 +14,32 @@
             <nav>
                 <ul>
                     <li><a href="index.html">home</a></li>
-                    <li><a href="tuto-html.html">html</a></li>
-                    <li><a href="tuto-css.html">css</a></li>
+                    <li><a href="tuto-html.html">html</a>
+                        <ul>
+                            <li><a href="tuto-html.html#balises">Les balises</a></li>
+                            <li><a href="#tuto-html.htmltitres-paragraphes">Titres et paragraphes</a></li>
+                            <li><a href="tuto-html.html#commentaires">Les commentaires</a></li>
+                            <li><a href="tuto-html.html#liens">Les liens</a></li>
+                            <li><a href="tuto-html.html#listes-tableaux">Listes et tableaux</a></li>
+                            <li><a href="tuto-html.html#formulaires">Les formulaires</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="tuto-css.html">css</a>
+                        <ul>
+                            <li><a href="tuto-css.html#top">Intégration</a></li>
+                            <li><a href="#tuto-css.html#colours">Les couleurs</a></li>
+                            <li><a href="tuto-css.html#proprietes">Les propriétés</a></li>
+                            <li><a href="tuto-css.html#polices">Les polices</a></li>
+                            <li><a href="tuto-css.html#texte">Le texte</a></li>
+                            <li><a href="tuto-css.html#float">Float</a></li>
+                            <li><a href="tuto-css.html#bordures">Les bordures</a></li>
+                            <li><a href="tuto-css.html#marges">Les marges</a></li>
+                            <li><a href="tuto-css.html#boites">Les boîtes</a></li>
+                        </ul></li>
                     <li><a href="tuto.html">tuto</a></li>
                 </ul>
             </nav>
             <div class="page">
-                <a href="#balises">test</a>
             <p> 
                 Contrairement à ce que beaucoup de monde pense, le HTML n’est pas un langage de programmation, mais de description. On ne programme pas en HTML, on décrit le contenu d’une page aux navigateurs qui la visitent, ces navigateurs se chargent ensuite de l’afficher. <br /> 
                 Le HTML (pour HyperText Markup Language) est basé sur un système de balises et d'attributs. Si l’on veut afficher par exemple un paragraphe, on va venir créer une balise de début de paragraphe (on dit qu’on ouvre la balise), on tape le contenu du paragraphe, puis on termine en plaçant une balise de fin de paragraphe (on dit qu’on ferme la balise). <br /> 
@@ -48,21 +67,21 @@
                     <h2>Voici ce que ça donne sur SublimeText</h2>
                 </div>
 
-            <h1>Titres et paragraphes</h1>
+            <a name="titres-paragraphes"><h1>Titres et paragraphes</h1></a>
                 <p>Nous allons ,à présent, parler des titres et paragraphes.<br/> Les titres sont répartis en 6 niveaux, 1 étant la plus importante et 6 la moins importante donc nous avons <strong>h1, h2, h3, h4, h5 et h6</strong>. Rien de bien difficile <br /> Pour les paragraphes c'est la balise <strong>&lt;p&gt;</strong></p>
                 <div class="image">
                     <img src="images/Para2.png"/>
                     <img src="images/Parabis.png"/>
                 </div>
 
-            <h1>Les commentaires</h1>
+            <a name="commentaires"><h1>Les commentaires</h1></a>
                 <p>En programmation, il est toujours utile d'écrire des commentaires pour les personnes qui liront après nous. Evidemment, le commentaire ne sera pas afficher sur la page web : <strong>&lt;!-- Commentaire --&gt;</strong></p>
                 <div class="image">
                     <img src="images/Comm.png"/>
                 </div>
 
 
-            <h1> Les liens</h1>
+            <a name="liens"><h1> Les liens</h1></a>
                 <p> En HTML, il est important de savoir faire des liens sur une page, c'est-à-dire insérer une image, un lien d'un site internet ou bien marquer un endroit précis de la page pour s'y rendre plus facilement. <br/> Pour cela on va utiliser les balises suivantes: </p>
             
                 <ul>
@@ -78,13 +97,13 @@
                     <img src="images/Lien2.png"/>                    
                 </div>
                 
-            <h1>Les listes</h1>
+            <a name="listes-tableaux"><h1>Les listes</h1></a>
                 <p>Il est possible de lister des mots, de façon ordonnée ou non.<br/> Avec la balise <strong>&lt;ul&gt;</strong> qui crée une liste non-ordonnée, ou <strong>&lt;ol&gt;</strong> pour l'ordonner. Puis la balise <strong>&lt;li&gt;</strong> pour créer un élément de liste.</p>
 
             <h1>Les tableaux</h1>
             <p> Pour créer des tableaux, utilisez la balise <strong>&lt;table&gt;</strong> dans laquelle vous utiliserez la balise <strong>&lt;tr&gt;</strong> qui désigne une ligne du tableau. Et pour afficher un message vous devrez utiliser les balises <strong>&lt;th&gt;</strong> ou <strong>&lt;td&gt;</strong></p>
             
-            <h1>Les formulaires</h1>
+            <a name="formulaires"><h1>Les formulaires</h1></a>
                 <p>Pour créer des formulaires ce sera la balise <strong>&lt;form&gt;.</strong>A l'intérieur de cette balise, on y place <strong>&lt;input type="" name=""&gt;</strong> afin de déterminer les élements du formulaire.<br/>La balise <strong>&lt;input&gt;</strong> est suivie de 3 types d'attributs:</p>
                     <ul>
                         <li><strong>text</strong>: qui permet d'entrer une ligne de texte(nom,prénom..)</li>

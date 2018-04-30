@@ -14,12 +14,33 @@
             <nav>
                 <ul>
                     <li><a href="index.html">home</a></li>
-                    <li><a href="tuto-html.html">html</a></li>
-                    <li><a href="tuto-css.html">css</a></li>
+                    <li><a href="tuto-html.html">html</a>
+                        <ul>
+                            <li><a href="tuto-html.html#balises">Les balises</a></li>
+                            <li><a href="#tuto-html.htmltitres-paragraphes">Titres et paragraphes</a></li>
+                            <li><a href="tuto-html.html#commentaires">Les commentaires</a></li>
+                            <li><a href="tuto-html.html#liens">Les liens</a></li>
+                            <li><a href="tuto-html.html#listes-tableaux">Listes et tableaux</a></li>
+                            <li><a href="tuto-html.html#formulaires">Les formulaires</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="tuto-css.html">css</a>
+                        <ul>
+                            <li><a href="tuto-css.html#top">Intégration</a></li>
+                            <li><a href="#tuto-css.html#colours">Les couleurs</a></li>
+                            <li><a href="tuto-css.html#proprietes">Les propriétés</a></li>
+                            <li><a href="tuto-css.html#polices">Les polices</a></li>
+                            <li><a href="tuto-css.html#texte">Le texte</a></li>
+                            <li><a href="tuto-css.html#float">Float</a></li>
+                            <li><a href="tuto-css.html#bordures">Les bordures</a></li>
+                            <li><a href="tuto-css.html#marges">Les marges</a></li>
+                            <li><a href="tuto-css.html#boites">Les boîtes</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </nav>
             <div class="page">
-                <p>Le CSS (Cascading Style Sheets) est aussi un langage de présentation qui vient compléter le HTML. C'est elle qui s'occupe de la forme de la page web.<br/><br/> Sa syntaxe est relativement simple. On indique en premier le selector(ID,class, balise), c'est à dire la partie de l'HTML que l'on veut modifier, suivi de ses propriétés. Comme le montre l'exemple:</p>
+                <a name="top"><p>Le CSS (Cascading Style Sheets) est aussi un langage de présentation qui vient compléter le HTML. C'est elle qui s'occupe de la forme de la page web.<br/><br/> Sa syntaxe est relativement simple. On indique en premier le selector(ID,class, balise), c'est à dire la partie de l'HTML que l'on veut modifier, suivi de ses propriétés. Comme le montre l'exemple:</p></a>
                 <div class="image" style="max-width: 50% !important;"> 
                     <img src="images/css1.png"/>
                 </div>
@@ -46,7 +67,7 @@
             
             
             
-                <h1> Les couleurs </h1>
+            <a name="colours"><h1> Les couleurs </h1></a>
             <p>Pour indiquer une couleur vous pouvez indiquer le nom (red,green,blue..) en RGB(valeur Rouge, valeur Verte, valeur Bleue) ou en héxadécimale (#FF7F50 pour Coral)</p>
             <div class="image">
                 <img src="images/nom.png"/>
@@ -55,21 +76,21 @@
                 <img src="images/result2.png"/>
             </div>
 
-        <h1>Les propriétés</h1>
+                    <a name="proprietes"><h1>Les propriétés</h1></a>
             <p>Vous connaissez déjà une propriété.. Si, si je vous jure! C'est la propriété <strong>color.</strong></p>Elle permet d'affecter une couleur.<br/> Pour la couleur de fond c'est la propriété <strong>background-color</strong>
             <div class="image">
                 <img src="images/back1.png"/>
                 <img src="images/back.png"/>
             </div>
 
-            <h3>Les fonts</h3>
+            <a name="polices"><h3>Les fonts</h3></a>
                 <p>Il est possible de modifier la forme de l'écriture grâce à <strong>font-style</strong>, par exemple si on veut écrire en italique on utilisera <strong>font-style:italic</strong>, en oblique avec <strong>font-size:oblique</strong> ou en normal <strong>font-size:normal</strong> </p>
                 <div class="image">
                     <img src="images/font1.png"/>
                     <img src="images/font.png"/>
             </div>
 
-            <h3>Le texte</h3>
+                <a name="texte"><h3>Le texte</h3></a>
                 <p>Pour aligner un texte en CSS, on utilise <strong>text-align</strong> avec comme valeurs <strong>center,left,right.</strong><<br/> Ce qui donne: <strong>h4{text-align:left;}</strong></p>
                 <div class="image">
                     <img src="images/align1.png"/>
@@ -77,7 +98,7 @@
             </div>
 
 
-            <h3>Le float</h3>
+                <a name="float"><h3>Le float</h3></a>
                 <p><strong>float</strong> en français veut dire <strong>flottant</strong>cette propriété permet de faire flotter une image à n'importe quel endroit d'un texte. Cette propriété est complétée avec les valeurs <strong>left</strong> ou <strong>right.</strong><br/>Elle s'écrira donc ainsi: 
                     <strong>img { float:left; }</strong></p>
             <div class="image">
@@ -85,7 +106,7 @@
                     <img src="images/float.png"/>
             </div>
 
-            <h3>Les bordures</h3>
+                <a name="bordures"><h3>Les bordures</h3></a>
                 <p>Pour encadrer du contenu de manière plus esthétique, on utilise <strong>border</strong> pour modifier la largeur, la couleur ou le type de bordure(tiret,pointillet..) que l'on souhaite voir apparaître.</p>
                     <ul>
                         <li><strong>border-width:</strong> modifie la largeur en pixel</li>
@@ -93,19 +114,19 @@
                         <li><strong>border-style:</strong> modifie le type de bordure et s'offre à vous un éventail de choix comme:<br/> dotted(pointillés), dashed(tirets), solid(trait), double, groove(relief)...
                         </li>
                     </ul>
-    <div class="image">
-                    <img src="images/border1.png"/>
-                    <img src="images/border.png"/>
-</div>
+                    <div class="image">
+                        <img src="images/border1.png"/>
+                        <img src="images/border.png"/>
+                    </div>
 
-            <h3 id="Les Marges">Les Marges</h3>
+                <a name="marges"><h3 id="Les Marges">Les Marges</h3></a>
                 <p>Lorsqu'on rédige un texte dans un bloc, on peut déterminer la marge <strong>intérieure</strong> (entre le texte et la bordure) et la marge <strong>extérieure </strong>(entre 2 blocs différents) pour plus de visibilité. On utilise la propriété <strong>margin</strong> pour modifier la marge extérieure et <strong>padding</strong> pour l'intérieure, en pixel. Il est possible d'être plus précis en couplant la <strong>margin</strong> avec des valeurs comme <strong>top,bottom,right,left.</strong><br/> On aura donc: <strong>p { margin-top:120px}</strong> </p>
                 <div class="image">
                     <img src="images/marge1.png"/>
                     <img src="images/marge.png"/>
                 </div>
 
-            <h3>Le modèle des boîtes</h3>
+                <a name="boites"><h3>Le modèle des boîtes</h3></a>
                 <p>Avec ce que nous avions vu précédemment, il est possible de modifier tout et n'importe quoi sur une page web. Le modèle des boîtes permet de positionner les différents blocs contenus sur la page. Grâce aux notions de <a href="#Les Marges">marges</a>, bordures, block, inline. Wait wat? Block?Inline?<br/> AHEM! La balise <strong>block</strong> en HTML, permet de délimiter les paragraphes entre eux  autrement dit elle crée des blocs et les place l'un au dessus de l'autre. Quant à la balise <strong>inline</strong>, elle permet de placer des textes en ligne, l'un à côté de l'autre. </p>
             <div class="image">
                     <img src="images/boite.png"/>
